@@ -1,0 +1,237 @@
+@import url(/../../../fonts/lunchtype.css/Lunchtype24/Web/stylesheet.css);
+@import url(/../../../fonts/lunchtype.css/Lunchtype22/Web/stylesheet.css);
+.lunchtype-regular {
+  font-family: "lunchtype22regular", sans-serif;
+}
+
+.lunchtype-medium {
+  font-family: "lunchtype22medium", sans-serif;
+}
+
+.lunchtype-light {
+  font-family: "lunchtype22light", sans-serif;
+}
+
+.lunchtype-expanded_light {
+  font-family: "lunchtype24expanded_light", sans-serif;
+}
+
+.lunchtype-expanded_medium {
+  font-family: "lunchtype24expanded_medium", sans-serif;
+}
+
+.lunchtype-expanded_regular {
+  font-family: "lunchtype24expanded_regular", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: lunchtype22regular, sans-serif;
+  color: #333;
+  font-size: 64px;
+  font-weight: normal;
+  letter-spacing: 2.03px;
+  padding-bottom: 8px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+
+@media (max-width: 768px) {
+  h1, h2, h3, h4, h5 {
+    font-size: 24px;
+  }
+}
+
+h2, h3, h4, h5 {
+  font-family: lunchtype22light, sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  letter-spacing: 2.03px;
+  padding-bottom: 8px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+
+@media (max-width: 768px) {
+  h2, h3, h4, h5 {
+    font-size: 24px;
+  }
+}
+
+h6 {
+  font-family: lunchtype24expanded_light, sans-serif;
+  color: #333;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 1.12px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+
+@media (max-width: 1024px) {
+  h6 {
+    font-size: 12px;
+  }
+}
+
+a {
+  font-family: lunchtype24expanded_regular, sans-serif;
+  color: blue;
+  font-size: 18px;
+  letter-spacing: 1.12px;
+  text-decoration: none;
+}
+
+a:hover {
+  font-family: lunchtype24expanded_medium, sans-serif;
+  letter-spacing: 1.12px;
+  color: blue;
+  text-decoration: underline;
+}
+
+p {
+  font-family: lunchtype22regular, sans-serif;
+  color: #333;
+  font-size: 24px;
+  padding-bottom: 32px;
+  letter-spacing: 2.03px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 24px;
+  }
+}
+
+hr {
+  border: 1px solid #333;
+}
+
+button {
+  -webkit-appearance: none;
+  padding: 4px 12px;
+  margin: 0;
+  letter-spacing: 1.12px;
+  border-radius: 0;
+  font-family: lunchtype22regular, sans-serif;
+  font-size: 16px;
+  color: blue;
+  border: 1px solid blue;
+  top: -3px;
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  button {
+    display: none;
+  }
+}
+
+main {
+  margin: 160px 0;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.wrapper {
+  padding: 24px 40px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 100%;
+  height: 24px;
+  background-color: #fafafa;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 8px 24px;
+  }
+}
+
+.wrapper a {
+  text-decoration: none;
+  letter-spacing: 1.12px;
+  padding-right: 56px;
+}
+
+.wrapper a:last-of-type {
+  padding-right: 0;
+}
+
+.portfolio-name {
+  justify-content: center;
+  position: fixed !important;
+  display: flex;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+}
+
+.portfolio-name h1 {
+  text-align: center;
+  margin: 24px 0 0;
+  line-height: 48px;
+  font-size: 48px;
+  text-decoration: underline;
+}
+
+#navbar {
+  transition: top 0.3s;
+  top: 0;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 80px 80px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 80px 24px;
+  }
+}
+
+.container h1 {
+  font-family: lunchtype24expanded_medium, sans-serif;
+}
+
+.portfolio-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin: 32px 0 0;
+}
+
+.portfolio-items {
+  width: 31%;
+  padding: 32px 0;
+}
+
+@media (max-width: 1200px) {
+  .portfolio-items img {
+    max-width: 250px;
+  }
+}

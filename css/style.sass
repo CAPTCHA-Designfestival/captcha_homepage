@@ -1,0 +1,262 @@
+@charset "UTF-8"
+@import "/../../../fonts/lunchtype.css/Lunchtype24/Web/stylesheet.css"
+@import "/../../../fonts/lunchtype.css/Lunchtype22/Web/stylesheet.css"
+.lunchtype-regular
+  font-family: "lunchtype22regular", sans-serif
+
+.lunchtype-medium
+  font-family: "lunchtype22medium", sans-serif
+
+.lunchtype-light
+  font-family: "lunchtype22light", sans-serif
+
+.lunchtype-expanded_light
+    font-family: "lunchtype24expanded_light", sans-serif
+
+.lunchtype-expanded_medium
+    font-family: "lunchtype24expanded_medium", sans-serif
+
+.lunchtype-expanded_regular
+    font-family: "lunchtype24expanded_regular", sans-serif
+
+//- - - - - - - - - - - - - - -
+// BREAKPOINTS
+
+@mixin breakpoint($point)
+  @if $point == desktophd
+    @media (max-width: 1900px)
+      @content
+
+  @if $point == desktop
+    @media (max-width: 1200px)
+      @content
+
+  @else if $point == tablet
+    @media (max-width: 1024px)
+      @content
+
+  @else if $point == phablet
+    @media (max-width: 768px)
+      @content
+
+  @else if $point == phone
+    @media (max-width: 500px)
+      @content
+
+$desktophd: max-width 1900px
+$desktop: max-width 1200px
+$tablet: max-width 1024px
+$tablet-range: 1024px
+$phablet: max-width 768px
+$phone: max-width 500px
+
+// - - - - - - - - - - - - - - -
+// INSTANCES
+
+// FONTS
+$font-stack-light: lunchtype22light, sans-serif
+$font-stack: lunchtype22regular, sans-serif
+$font-stack-bold: lunchtype22medium, sans-serif
+$expand-stack-light: lunchtype24expanded_light, sans-serif
+$expand-stack: lunchtype24expanded_regular, sans-serif
+$expand-stack-bold: lunchtype24expanded_medium, sans-serif
+
+// COLORS
+$black: #333
+$prim-color: blue
+$grey-light: #fafafa
+$grey-dark: #444
+$white: #fff
+
+// FONT-SIZE
+$caption: 12px
+$regular: 16px
+$a-regular: 18px
+$h-small: 24px
+$h-medium: 32px
+$h-big: 48px
+$h-huge: 64px
+
+
+// KERNING
+$spacing-p: 2.03px
+$spacing-a: 1.12px
+
+// - - - - - - - - - - - - - - -
+// FONT STYLES
+
+h1,h2,h3,h4,h5
+  font-family: $font-stack
+  color: $black
+  font-size: $h-huge
+  font-weight: normal
+  letter-spacing: $spacing-p
+  padding-bottom: 8px
+  -webkit-margin-before: 0
+  -webkit-margin-after: 0
+  -webkit-margin-start: 0
+  -webkit-margin-end: 0
+  @include breakpoint(phablet)
+    font-size: $h-small
+
+h2,h3,h4,h5
+  font-family: $font-stack-light
+  font-size: $h-big
+  font-weight: normal
+  letter-spacing: $spacing-p
+  padding-bottom: 8px
+  -webkit-margin-before: 0
+  -webkit-margin-after: 0
+  -webkit-margin-start: 0
+  -webkit-margin-end: 0
+  @include breakpoint(phablet)
+    font-size: $h-small
+
+h6
+  font-family: $expand-stack-light
+  color: $black
+  font-size: $regular
+  font-weight: normal
+  letter-spacing: $spacing-a
+  -webkit-margin-before: 0
+  -webkit-margin-after: 0
+  -webkit-margin-start: 0
+  -webkit-margin-end: 0
+  @include breakpoint(tablet)
+    font-size: $caption
+
+a
+  font-family: $expand-stack
+  color: $prim-color
+  font-size: $a-regular
+  letter-spacing: $spacing-a
+  text-decoration: none
+
+a:hover
+  font-family: $expand-stack-bold
+  letter-spacing: $spacing-a
+  color: $prim-color
+  text-decoration: underline
+
+p
+  font-family: $font-stack
+  color: $black
+  font-size: $h-small
+  padding-bottom: 32px
+  letter-spacing: $spacing-p
+  -webkit-margin-before: 0
+  -webkit-margin-after: 0
+  -webkit-margin-start: 0
+  -webkit-margin-end: 0
+  @include breakpoint(phablet)
+    font-size: $h-small
+
+hr
+  border: 1px solid $black
+
+button
+  -webkit-appearance: none
+  padding: 4px 12px
+  margin: 0
+  letter-spacing: $spacing-a
+  border-radius: 0
+  font-family: $font-stack
+  font-size: $regular
+  color: $prim-color
+  border: 1px solid $prim-color
+  top: -3px
+  position: relative
+  @include breakpoint(phone)
+    display: none
+
+//- - - - - - - - - - - - - - -
+// GENERAL
+
+main
+  margin: 160px 0
+
+body
+  max-width: 100%
+  overflow-x: hidden
+
+.sticky
+  position: fixed
+  top: 0
+  width: 100%
+
+//- - - - - - - - - - - - - - -
+// NAVIGATION
+
+.wrapper
+  padding: 24px 40px
+  display: flex
+  justify-content: flex-end
+  width: 100%
+  max-width: 100%
+  height: 24px
+  background-color: $grey-light
+  @include breakpoint(phablet)
+    padding: 8px 24px
+
+  a
+    text-decoration: none
+    letter-spacing: $spacing-a
+    padding-right: 56px
+
+    &:last-of-type
+      padding-right: 0
+
+
+.portfolio-name
+    justify-content: center
+    position: fixed !important
+    display: flex
+    z-index: 100
+    width: 100%
+    top: 0
+
+
+    h1
+      text-align: center
+      margin: 24px 0 0
+      line-height: 48px
+      font-size: $h-big
+      text-decoration: underline
+
+#navbar
+   transition: top 0.3s
+   top: 0
+   overflow: hidden
+   position: fixed
+   width: 100%
+   display: flex
+   justify-content: center
+
+// CONTAINER
+
+.container
+  margin: 80px 80px
+  @include breakpoint (phablet)
+    margin: 80px 24px
+
+  h1
+    font-family: $expand-stack-bold
+
+// GRIDS
+
+.portfolio-grid
+  display: flex
+  justify-content: space-between
+  flex-flow: row wrap
+  margin: 32px 0 0
+
+.portfolio-items
+  width: 31%
+  padding: 32px 0
+  @include breakpoint ($tablet-range)
+    width: 100%
+    margin: 0 0 24px 0
+
+  img
+    @include breakpoint (desktop)
+      max-width: 250px
