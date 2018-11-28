@@ -1,8 +1,8 @@
 @import "schriftarten.css"
 // Typographie
-$bold: 'Heebo', serif
+$bold: 'Heebo Bold', serif
 $paragraph: 'Heebo', sans-serif
-$light: 'Heebo', sans-serif
+$light: 'Heebo Light', sans-serif
 
 // FONT-SIZE
 $caption: 12px
@@ -13,10 +13,26 @@ $h-medium: 32px
 $h-big: 48px
 $h-hero: 64px
 
+// KERNING
+$kern-wide: 2.3px
+$kern-normal: 1.3px
+$kern-narrow: 1.12px
+
 //STYLES
-p
+
+h1
   font-family: $bold
+  letter-spacing: $kern-wide
   font-size: $h-hero
+  padding-bottom: 16px
+
+h2,h3,h4
+  font-family: $bold
+  letter-spacing: $kern-normal
+
+p
+  font-family: $paragraph
+  font-size: $regular
   -webkit-margin-before: 0
   -webkit-margin-after: 0
   -webkit-margin-start: 0
