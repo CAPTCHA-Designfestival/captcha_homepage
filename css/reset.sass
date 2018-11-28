@@ -107,6 +107,16 @@ button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-mo
   border-style: none
   padding: 0
 
+//Alle Eingabefelder - unabhängig vom Typ des Eingabefelds
+input
+  display: block
+
+//Platzhalter
+input::-webkit-input-placeholder, input::-moz-placeholder, input:-ms-input-placeholder, input:-moz-placeholder
+  color: rgb(128, 128, 128)
+  font-family: inherit
+  font-size: inherit
+
 //Fokus-Ring - Unsichtbar
 button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring
   outline: 1px dotted rgba(255, 255, 255, 0)
