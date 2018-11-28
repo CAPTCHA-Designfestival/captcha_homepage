@@ -9,13 +9,72 @@ h1 {
 h2, h3, h4 {
   font-family: "Heebo Bold", serif;
   letter-spacing: 1.3px;
-}
-
-p {
-  font-family: "Heebo", sans-serif;
-  font-size: 16px;
+  font-size: 32px;
+  margin: 0;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   -webkit-margin-start: 0;
   -webkit-margin-end: 0;
+  padding-bottom: 16px;
+}
+
+h5, h6 {
+  font-family: "Heebo Bold", serif;
+  letter-spacing: 1.3px;
+  font-size: 16px;
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  padding-bottom: 16px;
+}
+
+ul, li, p {
+  font-family: "Heebo", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  padding-bottom: 4px;
+}
+
+a {
+  font-family: "Heebo Bold", serif;
+  font-size: 16px;
+  text-decoration: underline;
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  padding-bottom: 8px;
+}
+
+a:hover {
+  background-color: #666;
+}
+
+hr {
+  border: 1px solid;
+}
+
+button {
+  font-family: "Heebo Bold", serif !important;
+  font-size: 32px;
+  letter-spacing: 2.3px;
+  border: none;
+  padding: 24px;
+  color: #333;
+  background-color: #f6f6f6;
+  box-shadow: none;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+button.invert {
+  color: #f6f6f6;
+  background-color: #333;
 }

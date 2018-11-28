@@ -1,4 +1,6 @@
 @import "schriftarten.css"
+@import "farben.sass"
+
 // Typographie
 $bold: 'Heebo Bold', serif
 $paragraph: 'Heebo', sans-serif
@@ -9,8 +11,7 @@ $caption: 12px
 $regular: 16px
 $big: 18px
 $h-small: 24px
-$h-medium: 32px
-$h-big: 48px
+$h-big: 32px
 $h-hero: 64px
 
 // KERNING
@@ -29,11 +30,65 @@ h1
 h2,h3,h4
   font-family: $bold
   letter-spacing: $kern-normal
-
-p
-  font-family: $paragraph
-  font-size: $regular
+  font-size: $h-big
+  margin: 0
   -webkit-margin-before: 0
   -webkit-margin-after: 0
   -webkit-margin-start: 0
   -webkit-margin-end: 0
+  padding-bottom: 16px
+
+h5,h6
+  font-family: $bold
+  letter-spacing: $kern-normal
+  font-size: $regular
+  margin: 0
+  -webkit-margin-before: 0
+  -webkit-margin-after: 0
+  -webkit-margin-start: 0
+  -webkit-margin-end: 0
+  padding-bottom: 16px
+
+
+ul,li,p
+  font-family: $paragraph
+  font-size: $regular
+  margin: 0
+  -webkit-margin-before: 0
+  -webkit-margin-after: 0
+  -webkit-margin-start: 0
+  -webkit-margin-end: 0
+  padding-bottom: 4px
+
+a
+  font-family: $bold
+  font-size: $regular
+  text-decoration: underline
+  margin: 0
+  -webkit-margin-before: 0
+  -webkit-margin-after: 0
+  -webkit-margin-start: 0
+  -webkit-margin-end: 0
+  padding-bottom: 8px
+
+  &:hover
+    background-color: $focus
+
+hr
+  border: 1px solid
+
+button
+  font-family: $bold !important
+  font-size: $h-big
+  letter-spacing: $kern-wide
+  border: none
+  padding: 24px
+  color: $primary-color
+  background-color: $secondary-color
+  box-shadow: none
+  border-radius: 6px
+  text-transform: uppercase
+
+button.invert
+    color: $secondary-color
+    background-color: $primary-color
