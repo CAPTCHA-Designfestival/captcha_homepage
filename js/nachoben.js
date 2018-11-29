@@ -6,9 +6,9 @@ window.onscroll = function() {ButtonEinblenden()};
 //Nach-Oben-Button einblenden
 function ButtonEinblenden() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        NachObenButton.classList.add("Vorschlagen");
+        NachObenButton.classList.add("Vorschlag");
     } else {
-        NachObenButton.classList.remove("Vorschlagen");
+        NachObenButton.classList.remove("Vorschlag");
     }
 }
 
@@ -28,7 +28,7 @@ function Scrolling() {
 //Onclick-Funktion für den Nach-Oben-Button
 NachObenButton.addEventListener('click', function(e) {
     e.preventDefault();
-    if (NachObenButton.classList == "Vorschlagen") {
+    if (NachObenButton.classList == "Vorschlag") {
         Scrolling();
     }
 });

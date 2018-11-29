@@ -15,6 +15,30 @@ footer
 .ZweiSpalten section
   width: calc(50% - 40px)
 
+//Popup
+.Popup
+  width: 100vw
+  height: 100vh
+  background-color: white
+  z-index: 999
+  display: none
+
+.Popup div
+  width: 50%
+  height: 80%
+  margin: 10% 25% 10% 25%
+  padding: 10px
+
+.PopupSchliessen
+  text-align: center
+
+.PopupSchliessen:hover, .PopupSchliessen:focus, .PopupSchliessen:active
+  cursor: pointer
+
+//Javascript-Fallback-Logik
+.RechtlicheVerweise
+  display: none
+
 //Nach-Oben-Button
 #NachOben
   opacity: 0
