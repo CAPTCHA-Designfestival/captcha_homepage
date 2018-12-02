@@ -11,9 +11,88 @@
 
 <body>
   <nav id="Oben">
+    <!-- Responsive Navigation Burger-Menü, lediglich für die animierte Darstellung -->
+    <div id="BurgerResponsiveNavigation">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <!-- Responsive Navigation eigentlicher Inhalt, Links, etc. -->
+    <nav id="ResponsiveNavigation">
+      <div class="ZweiSpalten">
+        <section>
+          <ul>
+            <li>Open Call</li>
+            <li>Workhsop</li>
+            <li>Exhibition</li>
+            <li>Sponsors</li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li>Team</li>
+            <li>Contact</li>
+            <li>Newsletter</li>
+          </ul>
+        </section>
+      </div>
+      <div class="ZweiSpalten">
+        <section>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/captchamannheim" rel="noopener noreferrer nofollow">
+                <img class="SocialMediaIcon" src="" alt="Facebook" longdesc="" />
+                Facebook
+                </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/captchamannheim/" rel="noopener noreferrer nofollow">
+                <img class="SocialMediaIcon" src="" alt="Instagram" longdesc="" />
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://vimeo.com/captchamannheim" rel="noopener noreferrer nofollow">
+                <img class="SocialMediaIcon" src="" alt="Vimeo" longdesc="" />
+                Vimeo
+              </a>
+            </li>
+            <li>
+              <a href="" rel="noopener noreferrer nofollow">
+                <img class="SocialMediaIcon" src="" alt="Behance" longdesc="" />
+                <!-- TODO: Behance-Profil muss noch angelegt werden. -->
+                Behance
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <ul class="RechtlicheVerweise Anzeige">
+            <li><a href="kontakt.html" rel="noopener noreferrer nofollow">Contact</a></li>
+            <li><a href="impressum.html" rel="noopener noreferrer nofollow">Imprint</a></li>
+            <li><a href="datenschutz.html" rel="noopener noreferrer nofollow">Data Security</a></li>
+            <li>&nbsp;<li>
+            <li><a href="sitemap.html" rel="noopener">Sitemap</a></li>
+          </ul>
+
+          <ul class="RechtlicheVerweise">
+            <li class="PopupButton" data-popup="Kontakt">Contact</li>
+            <li class="PopupButton" data-popup="Impressum">Imprint</li>
+            <li class="PopupButton" data-popup="Datenschutz">Data Security</li>
+            <li>&nbsp;<li>
+            <li><a href="sitemap.html" rel="noopener">Sitemap</a></li>
+          </ul>
+        </section>
+      </div>
+    </nav>
+
     <!-- TODO: Hier das Burger-Menü einbauen -->
     <img id="WortBildMarke" src="" alt="CAPTCHA Designfestival Mannheim" longdesc="" />
 
+    <!-- Schwerpunkte/Zentrales Interesse - Max. 4 Navigations-Punkte -->
     <ul>
       <li class="NavigationButton" data-section="OpenCall">Open Call</li>
       <li class="NavigationButton" data-section="Workshop">Workshop</li>
@@ -146,6 +225,7 @@
 <!-- SCRIPT-->
 <script src="js/fallback.js"></script>
 <script src="js/popup.js"></script>
+<script src="js/responsivenavigation.js"></script>
 <script src="js/lib/jquery-3.3.1.min.js"></script>
 <script src="js/main.js"></script>
 <!-- TODO: Modenizr-Library hinzufügen -->

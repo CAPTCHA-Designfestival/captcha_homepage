@@ -3,3 +3,21 @@
 
 .Anzeige
   display: block !important
+
+//Responsive Navigation Burger-Menü Animation
+.BurgerResponsiveNavigationEins
+  transform: rotate(-405deg) translateX(-10px) translateY(10px)
+
+.BurgerResponsiveNavigationZwei
+  transform: rotate(405deg) translateX(2px) translateY(2px)
+
+.BurgerResponsiveNavigationDrei
+  opacity: 0
+
+//Responsive Navigation Anzeige
+//Wenn Menü-Punkte hinzugefügt werden, die die Höhe des Menüs verändern (Menüpunkte pro Spalte > 5), dann muss die Verschiebung hier, wie auch in der "struktur.sass" angepasst werden! translateY() wird < - 160px
+.ResponsiveNavigationAnzeige
+  -webkit-transform: translateY(210px) !important
+  -moz-transform: translateY(210px) !important
+  -o-transform: translateY(210px) !important
+  transform: translateY(210px) !important
