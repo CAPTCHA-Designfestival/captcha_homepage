@@ -153,10 +153,13 @@ nav {
 #WortBildMarke {
   max-height: 50px;
   margin: 16px;
+  -webkit-filter: grayscale(100%) brightness(0);
+  filter: grayscale(100%) brightness(0);
 }
 
 .HeroBanner:not(h1) {
   display: flex;
+  position: relative;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
@@ -166,12 +169,9 @@ nav {
   background-size: cover;
   z-index: 1;
   height: 600px;
-  position: fixed;
   top: 80px;
   left: 0;
   right: 0;
-  -webkit-filter: grayscale(100%) contrast(0.5) brightness(0.7);
-  filter: grayscale(100%) contrast(0.5) brightness(0.7);
 }
 
 .HeroBanner:not(h1) h1 {
@@ -181,7 +181,18 @@ nav {
 }
 
 .HeroBannerSpacer {
-  height: 682px;
+  height: 80px;
+}
+
+.Ueber {
+  display: flex;
+  padding: 64px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.Ueber h1 {
+  text-align: center;
 }
 
 .Popup {
@@ -241,23 +252,91 @@ nav {
   background-color: red;
 }
 
-.VierSpalten {
-  width: calc(100vw - 40px);
+#SponsoringPakete nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+#SponsoringPakete nav div {
+  width: 25vw;
+  text-align: center;
+  padding: 6px;
+}
+
+#SponsoringPakete div {
+  width: 100vw;
   padding: 10px 20px;
+}
+
+#SponsoringPakete div section {
+  display: none;
+}
+
+#SponsoringPakete div section .Zwei {
   display: flex;
   justify-content: space-between;
   align-items: top;
 }
 
-.ZweiSpalten {
-  width: calc(50% - 40px);
+#SponsoringPakete div section .Zwei p {
+  width: calc(50% - 20px);
+}
+
+.SliderUndText {
+  width: 80vw;
+  margin: 5vh 5vw;
   display: flex;
   justify-content: space-between;
   align-items: top;
 }
 
-.ZweiSpalten section {
-  width: calc(50% - 40px);
+.SliderUndText section {
+  width: calc(50% - 15px);
+  height: auto;
+  padding: 0px;
+  /* Im Original entfernen*/
+  background-color: transparent !important;
+}
+
+.Slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Slider div:first-child, .Slider div:last-child {
+  width: calc(25% - 5px);
+}
+
+.Slider div:first-child i, .Slider div:last-child i {
+  margin: auto calc((100% - 25px) / 2);
+  align-items: center;
+  color: gray;
+  -webkit-transition: color 0.6s ease-in-out;
+  -moz-transition: color 0.6s ease-in-out;
+  -o-transition: color 0.6s ease-in-out;
+  transition: color 0.6s ease-in-out;
+}
+
+.Slider div:first-child i:hover, .Slider div:first-child i:focus, .Slider div:first-child i:active, .Slider div:last-child i:hover, .Slider div:last-child i:focus, .Slider div:last-child i:active {
+  color: black;
+  cursor: pointer;
+}
+
+.Slides {
+  width: calc(50% - 15px);
+}
+
+.Slides section {
+  width: 100%;
+  display: none;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .Raster {

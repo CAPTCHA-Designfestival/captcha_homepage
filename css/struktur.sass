@@ -65,11 +65,14 @@ nav
 #WortBildMarke
   max-height: 50px
   margin: 16px
+  -webkit-filter: grayscale(100%) brightness(0)
+  filter: grayscale(100%) brightness(0)
 
 // Hero
 
 .HeroBanner:not(h1)
   display: flex
+  position: relative
   flex-flow: column nowrap
   align-items: center
   justify-content: center
@@ -79,12 +82,9 @@ nav
   background-size: cover
   z-index: 1
   height: 600px
-  position: fixed
   top: 80px
   left: 0
   right: 0
-  -webkit-filter: grayscale(100%) contrast(0.5) brightness(0.7)
-  filter: grayscale(100%) contrast(0.5) brightness(0.7)
 
   h1
     color: $white
@@ -92,7 +92,17 @@ nav
     margin: 0 auto
 
 .HeroBannerSpacer
-  height: 682px
+  height: 80px
+
+// About Us
+.Ueber
+  display: flex
+  padding: 64px 0
+  justify-content: center
+  align-items: center
+
+  h1
+    text-align: center
 
 //Popup
 .Popup
