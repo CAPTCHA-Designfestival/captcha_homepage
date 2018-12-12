@@ -84,6 +84,11 @@ button.invert {
   margin-top: 20px;
 }
 
+nav {
+  position: fixed;
+  width: 100%;
+}
+
 #ResponsiveNavigation {
   width: calc(100vw - 40px);
   position: fixed;
@@ -148,6 +153,35 @@ button.invert {
 #WortBildMarke {
   max-height: 50px;
   margin: 16px;
+}
+
+.HeroBanner:not(h1) {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/img/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  height: 600px;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  -webkit-filter: grayscale(100%) contrast(0.5) brightness(0.7);
+  filter: grayscale(100%) contrast(0.5) brightness(0.7);
+}
+
+.HeroBanner:not(h1) h1 {
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.HeroBannerSpacer {
+  height: 682px;
 }
 
 .Popup {
