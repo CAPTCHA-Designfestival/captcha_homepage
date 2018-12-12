@@ -1,4 +1,10 @@
+@import "responsive.sass"
+@import "typographie.sass"
 //Responsive Navigation
+nav
+  position: fixed
+  width: 100%
+
 #ResponsiveNavigation
   width: calc(100vw - 40px)
   position: fixed
@@ -15,12 +21,13 @@
   -o-transition: transform 0.6s ease
   transition: transform 0.6s ease
 
+
 //Responsive Navigation Burger-Menü (Animation)
 #BurgerResponsiveNavigation
   width: 40px
   height: 40px
   position: fixed
-  top: 10px
+  top: 20px
   left: 20px
   z-index: 999
 
@@ -36,6 +43,56 @@
 #BurgerResponsiveNavigation li:nth-child(2)
   margin-top: calc((100% - 20px)/3)
   margin-bottom: calc((100% - 20px)/3)
+
+#HauptNav
+  display: flex
+  justify-content: space-between
+  padding: 0
+  margin-left: 56px
+
+  #HauptNavLinks
+    display: flex
+    flex-flow: row nowrap
+    justify-content: flex-end
+    padding-right: 16px
+    align-items: center
+
+    li
+      padding-right: 16px
+      font-family: $bold
+      font-size: $regular
+
+#WortBildMarke
+  max-height: 50px
+  margin: 16px
+
+// Hero
+
+.HeroBanner:not(h1)
+  display: flex
+  flex-flow: column nowrap
+  align-items: center
+  justify-content: center
+  background-image: url("/img/hero-image.jpg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  z-index: 1
+  height: 600px
+  position: fixed
+  top: 80px
+  left: 0
+  right: 0
+  -webkit-filter: grayscale(100%) contrast(0.5) brightness(0.7)
+  filter: grayscale(100%) contrast(0.5) brightness(0.7)
+
+  h1
+    color: $white
+    text-align: center
+    margin: 0 auto
+
+.HeroBannerSpacer
+  height: 682px
 
 //Popup
 .Popup
