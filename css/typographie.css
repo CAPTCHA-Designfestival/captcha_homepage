@@ -9,7 +9,8 @@ h1 {
 h2, h3, h4 {
   font-family: "Heebo Bold", serif;
   letter-spacing: 1.3px;
-  font-size: 32px;
+  text-transform: uppercase;
+  font-size: 24px;
   margin: 0;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
@@ -77,4 +78,9 @@ button {
 button.invert {
   color: #f6f6f6;
   background-color: #333;
+}
+
+.UeberschriftTrennung {
+  text-align: center;
+  margin-top: 20px;
 }

@@ -1,5 +1,19 @@
 @import "responsive.sass"
 @import "typographie.sass"
+
+// FLEX Stylings
+
+%flex-column-center
+  display: flex
+  flex-flow: column nowrap
+  align-items: center
+  justify-content: center
+  text-align: center
+
+%flex-row
+  display: flex
+  flex-flow: row nowrap
+
 //Responsive Navigation
 nav
   position: fixed
@@ -51,8 +65,7 @@ nav
   margin-left: 56px
 
   #HauptNavLinks
-    display: flex
-    flex-flow: row nowrap
+    @extend %flex-row
     justify-content: flex-end
     padding-right: 16px
     align-items: center
@@ -71,11 +84,8 @@ nav
 // Hero
 
 .HeroBanner:not(h1)
-  display: flex
+  @extend %flex-column-center
   position: relative
-  flex-flow: column nowrap
-  align-items: center
-  justify-content: center
   background-image: url("/img/hero-image.jpg")
   background-repeat: no-repeat
   background-position: center
@@ -88,7 +98,6 @@ nav
 
   h1
     color: $white
-    text-align: center
     margin: 0 auto
 
 .HeroBannerSpacer
@@ -96,13 +105,8 @@ nav
 
 // About Us
 .Ueber
-  display: flex
-  padding: 64px 0
-  justify-content: center
-  align-items: center
-
-  h1
-    text-align: center
+  @extend %flex-column-center
+  padding: 64px 64px
 
 //Popup
 .Popup
