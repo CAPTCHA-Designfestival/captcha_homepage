@@ -1,3 +1,5 @@
+@import "responsive.sass"
+@import "typographie.sass"
 //Responsive Navigation
 #ResponsiveNavigation
   width: calc(100vw - 40px)
@@ -15,12 +17,13 @@
   -o-transition: transform 0.6s ease
   transition: transform 0.6s ease
 
+
 //Responsive Navigation Burger-Menü (Animation)
 #BurgerResponsiveNavigation
   width: 40px
   height: 40px
   position: fixed
-  top: 10px
+  top: 20px
   left: 20px
   z-index: 999
 
@@ -36,6 +39,28 @@
 #BurgerResponsiveNavigation li:nth-child(2)
   margin-top: calc((100% - 20px)/3)
   margin-bottom: calc((100% - 20px)/3)
+
+#HauptNav
+  display: flex
+  justify-content: space-between
+  padding: 0
+  margin-left: 56px
+
+  #HauptNavLinks
+    display: flex
+    flex-flow: row nowrap
+    justify-content: flex-end
+    padding-right: 16px
+    align-items: center
+
+    li
+      padding-right: 16px
+      font-family: $bold
+      font-size: $regular
+
+#WortBildMarke
+  max-height: 50px
+  margin: 16px  
 
 //Popup
 .Popup
@@ -115,7 +140,7 @@
   display: grid
   grid-template-columns: auto auto auto auto auto auto auto auto
   grid-gap: 20px
-  
+
 // Footer
 footer
   width: calc(100vw - 40px)
