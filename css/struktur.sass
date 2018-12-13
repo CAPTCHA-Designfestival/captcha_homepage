@@ -14,10 +14,14 @@
   display: flex
   flex-flow: row nowrap
 
+body
+  background-color: $secondary-color
+
 //Responsive Navigation
 nav
   position: fixed
   width: 100%
+  background-color: $secondary-color
 
 #ResponsiveNavigation
   width: calc(100vw - 40px)
@@ -63,7 +67,6 @@ nav
   justify-content: space-between
   padding: 0
   margin-left: 56px
-  background-color: $white
 
   #HauptNavLinks
     @extend %flex-row
@@ -119,11 +122,11 @@ nav
   z-index: 999
   display: none
 
-.Popup div
-  width: 50%
-  height: 80%
-  margin: 10% 25% 10% 25%
-  padding: 10px
+  div
+    width: 50%
+    height: 80%
+    margin: 10% 25% 10% 25%
+    padding: 10px
 
 .PopupSchliessen
   text-align: center
@@ -146,15 +149,26 @@ nav
 
 //Symposium, Workshops, Ausstellung
 .DreiSpalten
-  width: calc(100vw - 40px)
-  padding: 64px 20px
+  width: calc(100vw - 120px)
+  background-color: $primary-color
+  color: $secondary-color
+  padding: 88px 60px
   display: flex
   justify-content: space-between
   align-items: top
+  @include breakpoint (tablet)
+    flex-flow: column nowrap
+    width: auto
+
+  h1,h2,h3,h4,h5,h6,ul,li,p,a
+    color: $secondary-color !important
 
   section
-    width: calc((100% / 3) - 40px)
+    width: calc((100% / 3) - 120px)
     @extend %flex-column-center
+    @include breakpoint (tablet)
+      width: 100%
+      padding: 0 0 48px
 
     img
       width: 100px

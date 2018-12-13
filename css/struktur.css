@@ -3,6 +3,7 @@ h1 {
   font-family: "Heebo Bold", serif;
   letter-spacing: 2.3px;
   font-size: 64px;
+  color: #333;
   padding-bottom: 16px;
 }
 
@@ -11,6 +12,7 @@ h2, h3, h4 {
   letter-spacing: 1.3px;
   text-transform: uppercase;
   font-size: 24px;
+  color: #333;
   margin: 0;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
@@ -23,6 +25,7 @@ h5, h6 {
   font-family: "Heebo Bold", serif;
   letter-spacing: 1.3px;
   font-size: 16px;
+  color: #333;
   margin: 0;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
@@ -34,6 +37,7 @@ h5, h6 {
 ul, li, p {
   font-family: "Heebo", sans-serif;
   font-size: 16px;
+  color: #333;
   margin: 0;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
@@ -45,6 +49,7 @@ ul, li, p {
 a {
   font-family: "Heebo Bold", serif;
   font-size: 16px;
+  color: #333;
   text-decoration: underline;
   margin: 0;
   -webkit-margin-before: 0;
@@ -98,9 +103,14 @@ button.invert {
   flex-flow: row nowrap;
 }
 
+body {
+  background-color: #f6f6f6;
+}
+
 nav {
   position: fixed;
   width: 100%;
+  background-color: #f6f6f6;
 }
 
 #ResponsiveNavigation {
@@ -148,7 +158,6 @@ nav {
   justify-content: space-between;
   padding: 0;
   margin-left: 56px;
-  background-color: #fff;
 }
 
 #HauptNav #HauptNavLinks {
@@ -236,15 +245,35 @@ nav {
 }
 
 .DreiSpalten {
-  width: calc(100vw - 40px);
-  padding: 64px 20px;
+  width: calc(100vw - 120px);
+  background-color: #333;
+  color: #f6f6f6;
+  padding: 88px 60px;
   display: flex;
   justify-content: space-between;
   align-items: top;
 }
 
+@media (max-width: 1024px) {
+  .DreiSpalten {
+    flex-flow: column nowrap;
+    width: auto;
+  }
+}
+
+.DreiSpalten h1, .DreiSpalten h2, .DreiSpalten h3, .DreiSpalten h4, .DreiSpalten h5, .DreiSpalten h6, .DreiSpalten ul, .DreiSpalten li, .DreiSpalten p, .DreiSpalten a {
+  color: #f6f6f6 !important;
+}
+
 .DreiSpalten section {
-  width: calc((100% / 3) - 40px);
+  width: calc((100% / 3) - 120px);
+}
+
+@media (max-width: 1024px) {
+  .DreiSpalten section {
+    width: 100%;
+    padding: 0 0 48px;
+  }
 }
 
 .DreiSpalten section img {
