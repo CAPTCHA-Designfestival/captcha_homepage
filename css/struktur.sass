@@ -63,6 +63,7 @@ nav
   justify-content: space-between
   padding: 0
   margin-left: 56px
+  background-color: $white
 
   #HauptNavLinks
     @extend %flex-row
@@ -71,8 +72,10 @@ nav
     align-items: center
 
     li
-      padding-right: 16px
+      padding-right: 32px
       font-family: $bold
+      text-transform: uppercase
+      letter-spacing: $kern-normal
       font-size: $regular
 
 #WortBildMarke
@@ -106,7 +109,7 @@ nav
 // About Us
 .Ueber
   @extend %flex-column-center
-  padding: 64px 64px
+  padding: 128px
 
 //Popup
 .Popup
@@ -144,21 +147,23 @@ nav
 //Symposium, Workshops, Ausstellung
 .DreiSpalten
   width: calc(100vw - 40px)
-  padding: 10px 20px
+  padding: 64px 20px
   display: flex
   justify-content: space-between
   align-items: top
 
-.DreiSpalten section
-  width: calc((100% / 3) - 20px)
+  section
+    width: calc((100% / 3) - 40px)
+    @extend %flex-column-center
 
-.DreiSpalten section img
-  width: 100px
-  height: 100px
-  border-radius: 50%
-  overflow: hidden
-  //Darstellung
-  background-color: red
+    img
+      width: 100px
+      height: 100px
+      border-radius: 50%
+      overflow: hidden
+      //Darstellung
+      background-color: red
+      margin-bottom: 32px
 
 //Sponsoring-Pakete
 #SponsoringPakete nav
@@ -167,7 +172,8 @@ nav
   justify-content: space-between
   align-items: top
 
-#SponsoringPakete nav div
+#SponsoringPakete nav
+  display: block
   width: 25vw
   text-align: center
   padding: 6px

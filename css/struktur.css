@@ -85,7 +85,7 @@ button.invert {
   margin-top: 20px;
 }
 
-.HeroBanner:not(h1), .Ueber {
+.HeroBanner:not(h1), .Ueber, .DreiSpalten section {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -148,6 +148,7 @@ nav {
   justify-content: space-between;
   padding: 0;
   margin-left: 56px;
+  background-color: #fff;
 }
 
 #HauptNav #HauptNavLinks {
@@ -157,8 +158,10 @@ nav {
 }
 
 #HauptNav #HauptNavLinks li {
-  padding-right: 16px;
+  padding-right: 32px;
   font-family: "Heebo Bold", serif;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
   font-size: 16px;
 }
 
@@ -192,7 +195,7 @@ nav {
 }
 
 .Ueber {
-  padding: 64px 64px;
+  padding: 128px;
 }
 
 .Popup {
@@ -234,14 +237,14 @@ nav {
 
 .DreiSpalten {
   width: calc(100vw - 40px);
-  padding: 10px 20px;
+  padding: 64px 20px;
   display: flex;
   justify-content: space-between;
   align-items: top;
 }
 
 .DreiSpalten section {
-  width: calc((100% / 3) - 20px);
+  width: calc((100% / 3) - 40px);
 }
 
 .DreiSpalten section img {
@@ -250,6 +253,7 @@ nav {
   border-radius: 50%;
   overflow: hidden;
   background-color: red;
+  margin-bottom: 32px;
 }
 
 #SponsoringPakete nav {
@@ -259,7 +263,8 @@ nav {
   align-items: top;
 }
 
-#SponsoringPakete nav div {
+#SponsoringPakete nav {
+  display: block;
   width: 25vw;
   text-align: center;
   padding: 6px;
