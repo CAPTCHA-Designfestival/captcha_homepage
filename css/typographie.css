@@ -69,20 +69,25 @@ hr {
 
 button {
   font-family: "Heebo Bold", serif !important;
-  font-size: 32px;
+  font-size: 16px;
   letter-spacing: 2.3px;
-  border: none;
-  padding: 24px;
+  border: 1px solid #333;
+  padding: 12px;
+  margin: 24px 0;
   color: #333;
-  background-color: #f6f6f6;
+  background: 0;
   box-shadow: none;
-  border-radius: 6px;
+  border-radius: 2px;
   text-transform: uppercase;
 }
 
+button:hover {
+  background-color: rgba(51, 51, 51, 0.2);
+}
+
 button.invert {
+  border: 1px solid #f6f6f6;
   color: #f6f6f6;
-  background-color: #333;
 }
 
 .UeberschriftTrennung {

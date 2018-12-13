@@ -12,7 +12,7 @@
 
 %flex-row
   display: flex
-  flex-flow: row nowrap
+  flex-flow: row wrap
 
 body
   background-color: $secondary-color
@@ -101,18 +101,36 @@ nav
   top: 80px
   left: 0
   right: 0
+  filter: saturate(0.2)
+  -webkit-filter: saturate(0.2) 
 
   h1
     color: $white
     margin: 0 auto
+
+  .HeroBannerOverlay
+    background: rgba($primary-color, 0.5)
+    width: 100%
+    height: 100%
+    @extend %flex-column-center
+
 
 .HeroBannerSpacer
   height: 80px
 
 // About Us
 .Ueber
-  @extend %flex-column-center
+  @extend %flex-row
   padding: 128px
+  justify-content: center
+
+  img
+    width: 200px
+    max-height: 200px
+
+  .UeberBeschreibung
+    width: 50%
+    padding: 0 32px 0
 
 //Popup
 .Popup
