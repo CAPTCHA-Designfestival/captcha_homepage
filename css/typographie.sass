@@ -2,6 +2,7 @@
 @import "farben.sass"
 
 // Typographie
+$serif-bold: 'Prata', serif
 $bold: 'Heebo Bold', serif
 $paragraph: 'Heebo', sans-serif
 $light: 'Heebo Light', sans-serif
@@ -22,16 +23,15 @@ $kern-narrow: 1.12px
 //STYLES
 
 h1
-  font-family: $bold
+  font-family: $serif-bold
   letter-spacing: $kern-wide
   font-size: $h-hero
   color: $primary-color
   padding-bottom: 16px
 
 h2,h3,h4
-  font-family: $bold
+  font-family: $serif-bold
   letter-spacing: $kern-normal
-  text-transform: uppercase
   font-size: $h-small
   color: $primary-color
   margin: 0
@@ -97,8 +97,7 @@ button
   text-transform: uppercase
 
   &:hover
-    background-color: rgba($primary-color, 0.2)
-
+    background-color: $hover
 
 button.invert
   border: 1px solid $secondary-color
