@@ -31,4 +31,5 @@
   -moz-transform: translateY(240px) !important;
   -o-transform: translateY(240px) !important;
   transform: translateY(240px) !important;
+  opacity: 1 !important;
 }
