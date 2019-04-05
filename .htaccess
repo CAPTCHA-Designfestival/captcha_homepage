@@ -138,6 +138,7 @@ Header set Cache-Control "max-age=2592000, public"
 	RewriteCond %{QUERY_STRING} (thumbs?(_editor|open)?|tim(thumb)?)\.php [NC,OR]
 	RewriteCond %{QUERY_STRING} (\'|\")(.*)(drop|insert|md5|select|union) [NC]
 	RewriteRule .* - [F]
+</IfModule>
 
 # 6G:[REQUEST METHOD]
 <IfModule mod_rewrite.c>
