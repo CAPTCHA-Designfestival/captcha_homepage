@@ -1,3 +1,5 @@
+@import farben.sass
+
 .Vorschlag
   opacity: 1 !important
 
@@ -9,6 +11,19 @@
 
 .Unterstreichen
   border-bottom: 2px rgb(0,0,0) solid
+
+.SponsoringPaketOptionen
+  height: 200px !important
+
+#SponsoringPakete > nav > ul > li:not(:first-child)
+  -webkit-transition: all 0.2s ease-in
+  -moz-transition: all 0.2s ease-in
+  -o-transition: all 0.2s ease-in
+  transition: all 0.2s ease-in
+
+#SponsoringPakete > nav > ul > li:not(:first-child):hover, #SponsoringPakete > nav > ul > li:not(:first-child):focus, #SponsoringPakete > nav > ul > li:not(:first-child):active
+  background-color: $primary-color
+  color: $secondary-color
 
 //Responsive Navigation Burger-Menü Animation
 .BurgerResponsiveNavigationEins

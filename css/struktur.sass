@@ -200,85 +200,39 @@ nav
       margin-bottom: 32px
 
 //Sponsoring-Pakete
-#SponsoringPakete nav
+#SponsoringPakete, #SponsoringPakete nav, #SponsoringPakete ul
   width: 100vw
-  display: flex
-  justify-content: space-between
-  align-items: top
 
-#SponsoringPakete nav
+#SponsoringPakete > nav
   display: block
-  width: 25vw
+  height: 45px
+  overflow: hidden
+  -webkit-transition: all 0.4s ease-in
+  -moz-transition: all 0.4s ease-in
+  -o-transition: all 0.4s ease-in
+  transition: all 0.4s ease-in
+
+#SponsoringPakete > nav > ul > li
   text-align: center
-  padding: 6px
+  padding: 8px 0px
+  font-size: 1.2rem
+  border-bottom: 2px $primary-color solid
 
-#SponsoringPakete div
-  width: 100vw
+#SponsoringPakete > div
+  margin: 10px 0px 10px 0px
+
+#SponsoringPakete > div > section
   padding: 10px 20px
-
-#SponsoringPakete div section
   display: none
 
-#SponsoringPakete div section .Zwei
+#SponsoringPakete > div > section > .Zwei
+  width: 100%
   display: flex
   justify-content: space-between
   align-items: top
 
-#SponsoringPakete div section .Zwei p
-  width: calc(50% - 20px)
-
-//Testimonial Slider
-.SliderUndText
-  width: 80vw
-  margin: 5vh 5vw
-  display: flex
-  justify-content: space-between
-  align-items: top
-
-  section
-    width: calc(50% - 15px)
-    height: auto
-    padding: 0px
-    /* Im Original entfernen*/
-    background-color: transparent !important
-
-.Slider
-  display: flex
-  justify-content: space-between
-  align-items: center
-
-  .Rechts
-    text-align: right
-
-.Slider div:first-child, .Slider div:last-child
-  width: calc(25% - 5px)
-  padding: 32px
-
-.Slider div:first-child i, .Slider div:last-child i
-  margin: auto calc((100% - 25px) / 2)
-  align-items: center
-  color: rgb(128, 128, 128)
-  -webkit-transition: color 0.6s ease-in-out
-  -moz-transition: color 0.6s ease-in-out
-  -o-transition: color 0.6s ease-in-out
-  transition: color 0.6s ease-in-out
-
-.Slider div:first-child i:hover, .Slider div:first-child i:focus, .Slider div:first-child i:active, .Slider div:last-child i:hover, .Slider div:last-child i:focus, .Slider div:last-child i:active
-  color: rgb(0, 0, 0)
-  cursor: pointer
-
-.Slides
-  width: calc(50% - 15px)
-  margin: 88px 0
-
-  section
-    width: 100%
-    display: none
-    opacity: 0
-    -webkit-transition: all 0.6s ease-in-out
-    -moz-transition: all 0.6s ease-in-out
-    -o-transition: all 0.6s ease-in-out
-    transition: all 0.6s ease-in-out
+#SponsoringPakete > div > section > .Zwei > p
+  width: calc(50% - 10px)
 
 //Bisherige Sponsoren
 .Raster
@@ -289,6 +243,29 @@ nav
     display: grid
     grid-template-columns: auto auto auto auto auto auto auto auto
     grid-gap: 20px
+
+// Testimonial Slider
+#TestimonialSlider
+  width: calc(100vw - 40px)
+  margin: 20px
+  overflow: hidden
+
+#TestimonialSlider > div
+  display: flex
+  flex-wrap: nowrap
+  align-items: center
+  -webkit-transition: all 0.6s ease-in
+  -moz-transition: all 0.6s ease-in
+  -o-transition: all 0.6s ease-in
+  transition: all 0.6s ease-in
+
+#TestimonialSlider > div > section
+  flex: 0 0 auto
+  width: calc(100vw - 40px)
+  text-align: center
+
+#TestimonialSlider > div > section > p:first-child
+  font-size: 1.2em
 
 // Footer
 footer
